@@ -468,6 +468,19 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@msticketing/common@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@msticketing/common/-/common-1.0.4.tgz#6978f1c093b92d41b651b15d271677fc355eea01"
+  integrity sha512-Ocf0MzRNag49x+87qyjIHyiV2ssqJm/Hzpb1GpApF9H6Y1GD6rJo8kn8ra29VvaHTc5uza/gbPjjAxL5yzSIww==
+  dependencies:
+    "@types/cookie-session" "^2.0.41"
+    "@types/express" "^4.17.7"
+    "@types/jsonwebtoken" "^8.5.0"
+    cookie-session "^1.4.0"
+    express "^4.17.1"
+    express-validator "^6.6.1"
+    jsonwebtoken "^8.5.1"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.1.tgz#e7df00f98a203324f6dc7cc606cad9d4a8ab2217"
@@ -1785,6 +1798,14 @@ express-validator@^6.6.0:
   integrity sha512-xcephfzFbUssJph/nOSKIdx+I+8GRz5by/8rOIKL6gJikKKKJjnwYH5TG1nIDB6kEalUtZMbOFuSNOp/HHY84Q==
   dependencies:
     lodash "^4.17.15"
+    validator "^13.1.1"
+
+express-validator@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-6.6.1.tgz#c53046f615d27fcb78be786e018dcd60bd9c6c5c"
+  integrity sha512-+MrZKJ3eGYXkNF9p9Zf7MS7NkPJFg9MDYATU5c80Cf4F62JdLBIjWxy6481tRC0y1NnC9cgOw8FuN364bWaGhA==
+  dependencies:
+    lodash "^4.17.19"
     validator "^13.1.1"
 
 express@^4.17.1:

@@ -3,6 +3,8 @@ const withSass = require("@zeit/next-sass");
 const withLess = require("@zeit/next-less");
 const withCSS = require("@zeit/next-css");
 const runtimeCaching = require('next-pwa/cache')
+const withOffline = require('next-offline')
+
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -10,10 +12,11 @@ if (typeof require !== "undefined") {
   require.extensions[".less"] = (file) => {};
 }
 
-module.exports = withCSS(withPWA({
+module.exports = withOffline(withCSS(withPWA({
   pageExtensions: ["tsx"],
+  workboxOpts: {
+  },
   pwa: {
-    disable: true,
     dest: "public",
     runtimeCaching
   },
@@ -29,4 +32,4 @@ module.exports = withCSS(withPWA({
       },
     })
   ),
-}))
+})))

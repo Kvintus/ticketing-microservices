@@ -1,8 +1,5 @@
-import { requireAuth } from './../middlewares/require-auth';
-import { currentUser } from './../middlewares/current-user';
-import { BadRequestError } from "./../errors/bad-request-error";
 import express from "express";
-import jwt from "jsonwebtoken";
+import { currentUser } from '@msticketing/common';
 
 const router = express.Router();
 

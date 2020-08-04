@@ -1,6 +1,4 @@
-import { testCredentials, generateSignInRequest, signUpRequest } from './utils';
-import request from "supertest";
-import { app } from "../../app";
+import { generateSignInRequest, signUpRequest, testCredentials } from './utils';
 
 it('fails when an email that does not exists is provided', async () => {
   await generateSignInRequest(testCredentials).expect(400)

@@ -1,7 +1,7 @@
-import { signin } from './../../test/test-utils';
-import { signUpRequest, testCredentials } from './utils';
 import request from "supertest";
 import { app } from "../../app";
+import { signin } from './../../test/test-utils';
+import { testCredentials } from './utils';
 
 it('responds with details of current user', async () => {
   const cookie = await signin()
